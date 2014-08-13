@@ -1,6 +1,6 @@
 # Erlang builder
 
-Builds an Erlang release for linux.
+Builds an Erlang release for Heroku (Ubuntu 10.04).
 
 ## Usage
 
