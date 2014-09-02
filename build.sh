@@ -8,7 +8,7 @@ mkdir -p out
 cd out
 
 wget https://github.com/erlang/otp/archive/OTP-${VERSION}.tar.gz
-tar -xzf OTP-${VERSION}.tar.gz
+tar -xzmf OTP-${VERSION}.tar.gz
 chmod -R 777 otp-OTP-${VERSION}
 
 cd otp-OTP-${VERSION}
