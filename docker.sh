@@ -1,5 +1,5 @@
-docker rm -fv build-erlang-${1}
-docker build -t build-erlang .
-docker run -t -e "VERSION=${1}" --name=build-erlang-${1} build-erlang
+docker rm -fv build-erlang-${2}
+docker build -t build-erlang ubuntu-${1}
+docker run -t -e "VERSION=${2}" --name=build-erlang-${2} build-erlang
 
-docker cp build-erlang-${1}:/home/build/out/OTP-${1}.tar.gz out
+docker cp build-erlang-${2}:/home/build/out/OTP-${2}.tar.gz ubuntu-${1}/out
