@@ -13,7 +13,7 @@ chmod -R 777 otp-OTP-${VERSION}
 
 cd otp-OTP-${VERSION}
 ./otp_build autoconf
-./configure
+./configure --with-ssl --enable-dirty-schedulers
 make
 make release
 
