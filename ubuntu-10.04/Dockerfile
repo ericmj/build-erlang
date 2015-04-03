@@ -13,5 +13,5 @@ RUN apt-get -y install wget ca-certificates
 RUN mkdir -p /home/build/out
 WORKDIR /home/build
 
-COPY ../build.sh /home/build/build.sh
+COPY build.sh /home/build/build.sh
 ENTRYPOINT ./build.sh
